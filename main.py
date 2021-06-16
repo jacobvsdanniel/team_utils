@@ -64,11 +64,11 @@ def team_up(player_list):
             team1, team2 = Team(sorted_player_list[:team_size]), Team(sorted_player_list[team_size:])
         except AssertionError:
             continue
-        l_diff = abs(team1.score_w - team2.score_w)
-        r_diff = abs(team1.score_e - team2.score_e)
+        w_diff = abs(team1.score_w - team2.score_w)
+        e_diff = abs(team1.score_e - team2.score_e)
         t_diff = abs(team1.score_t - team2.score_t)
         if len(player_list) % 4 == 0:
-            score_diff = max(l_diff, r_diff, t_diff)
+            score_diff = max(w_diff, e_diff, t_diff)
         else:
             score_diff = t_diff
         if best_team_up is None or score_diff < best_team_up[2]:
