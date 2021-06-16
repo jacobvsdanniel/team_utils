@@ -11,7 +11,7 @@ For example, 8 players can setup the following battle:
 
 - The mean (positional) skill ratings of the teams are balanced.
 - (A Player's pocket and flank ratings can be different.)
-- The mean skill ratings of each wing are also balanced when there are no central players.
+- The mean skill rating of each wing are also balanced when there are no central players.
 - (Central players do not belong to any wing and render wing balance less important.)
 
 ## Running the Tool
